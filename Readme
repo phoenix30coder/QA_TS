@@ -1,0 +1,55 @@
+# Playwright & Cucumber Setup
+
+This guide provides step-by-step instructions for setting up Playwright with Cucumber for end-to-end (E2E) testing.
+
+## Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Recommended: LTS version)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Playwright](https://playwright.dev/)
+- [Cucumber.js](https://cucumber.io/)
+
+## Installation
+
+### 1. Initialize a Node.js Project
+```sh
+npm init -y
+```
+
+### 2. Install Playwright
+```sh
+npm install --save-dev @playwright/test
+```
+
+### 3. Install Cucumber.js and Related Dependencies
+```sh
+npm install --save-dev @cucumber/cucumber playwright cucumber-html-reporter
+```
+
+### 4. Install Playwright Browsers
+```sh
+npx playwright install
+```
+
+## Project Structure
+```
+TS_QA_BASE_CODE/
+|--config/
+|   |──cucumber.js
+|   |──playwright.config.ts
+|---tests/
+|   |──features/
+│   |  ├── LoginSteps.feature
+│   |──steps/
+│   |  ├── LoginSteps.ts
+│   |──support/
+|   |  |──LoginHelper.js
+│   |  ├── Hooks.js
+│-- package.json
+│-- tsconfig.json
+```
+
+
+
+

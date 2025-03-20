@@ -1,0 +1,46 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-test;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with Valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 393169200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Login with valid details",
+            "match": {
+              "location": "tests\\steps\\LoginSteps.ts:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 318391400,
+              "error_message": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://ts-sit.finsurge.ai/tradelens-gui/#/login\nCall log:\n\u001b[2m  - navigating to \"https://ts-sit.finsurge.ai/tradelens-gui/#/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.<anonymous> (D:\\QA-lab\\playwright-ground\\tests\\pages\\BasePage.ts:17:25)\n    at step (D:\\QA-lab\\playwright-ground\\tests\\pages\\BasePage.ts:33:23)\n    at Object.next (D:\\QA-lab\\playwright-ground\\tests\\pages\\BasePage.ts:14:53)\n    at D:\\QA-lab\\playwright-ground\\tests\\pages\\BasePage.ts:8:71\n    at __awaiter (D:\\QA-lab\\playwright-ground\\tests\\pages\\BasePage.ts:4:12)\n    at LoginPage.BasePage.navigateTo (D:\\QA-lab\\playwright-ground\\tests\\pages\\BasePage.ts:49:16)\n    at D:\\QA-lab\\playwright-ground\\tests\\support\\loginHelper.ts:13:19\n    at step (D:\\QA-lab\\playwright-ground\\tests\\support\\loginHelper.ts:33:23)\n    at Object.next (D:\\QA-lab\\playwright-ground\\tests\\support\\loginHelper.ts:14:53)\n    at D:\\QA-lab\\playwright-ground\\tests\\support\\loginHelper.ts:8:71\n    at __awaiter (D:\\QA-lab\\playwright-ground\\tests\\support\\loginHelper.ts:4:12)\n    at login (D:\\QA-lab\\playwright-ground\\tests\\support\\loginHelper.ts:43:12)\n    at World.<anonymous> (D:\\QA-lab\\playwright-ground\\tests\\steps\\LoginSteps.ts:13:14)\n    at step (D:\\QA-lab\\playwright-ground\\tests\\steps\\LoginSteps.ts:33:23)\n    at Object.next (D:\\QA-lab\\playwright-ground\\tests\\steps\\LoginSteps.ts:14:53)\n    at D:\\QA-lab\\playwright-ground\\tests\\steps\\LoginSteps.ts:8:71\n    at __awaiter (D:\\QA-lab\\playwright-ground\\tests\\steps\\LoginSteps.ts:4:12)\n    at World.<anonymous> (D:\\QA-lab\\playwright-ground\\tests\\steps\\LoginSteps.ts:44:12)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Test",
+    "tags": [],
+    "uri": "tests\\features\\LoginTest.feature"
+  }
+]
