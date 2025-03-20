@@ -31,6 +31,12 @@ npm install --save-dev @cucumber/cucumber playwright cucumber-html-reporter
 
 npx playwright install
 
+5. Running the test steps:
+npx cucumber-js --config=config/cucumber.js
+
+6. Report viewing :
+goto newly generated reports folder and open the html file cucumber-report.html
+
 
 Project Structure
 
