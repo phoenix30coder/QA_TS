@@ -12,20 +12,22 @@ export default class BasePage {
         this.page = page;
         this.BASE_URL = config.use.baseURL;
     }
-
+    /*this function takes the url as input and navigate to the url*/
     async navigateTo(url: string) {
         await this.page.goto(`${this.BASE_URL}${url}`, { timeout: 60000, waitUntil: "load" });  // 60s timeout
     }
 
+    /*this function gets the test from an element*/
     async getText(locator: string): Promise<string> {
         return (await this.page.locator(locator).textContent()) ?? "";
     }
 
+    /*this function type the text into an input field*/
     async setText(text: string, locator: string) {
         await this.waitForElement(locator);
         await this.page.fill(locator, text);
     }
-
+/*this function clicks a button*/
     async clickBtn(locator: string) {
         await this.waitForElement(locator);
         await Promise.all([
@@ -36,7 +38,7 @@ export default class BasePage {
         console.log(`Clicked button: ${locator}`);
     }
     
-
+/*this function wait for an element to become visible it will wait until an element gets visible*/
     async waitForElement(locator: string, timeout: number = 10000) {
         try {
             console.log(`Waiting for element: ${locator}`);
