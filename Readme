@@ -1,8 +1,8 @@
-# Playwright & Cucumber Setup
+Playwright & Cucumber Setup
 
 This guide provides step-by-step instructions for setting up Playwright with Cucumber for end-to-end (E2E) testing.
 
-## Prerequisites
+Prerequisites
 
 Ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (Recommended: LTS version)
@@ -10,30 +10,30 @@ Ensure you have the following installed:
 - [Playwright](https://playwright.dev/)
 - [Cucumber.js](https://cucumber.io/)
 
-## Installation
+Installation
 
-### 1. Initialize a Node.js Project
-```sh
+ 1. Initialize a Node.js Project
+
 npm init -y
-```
 
-### 2. Install Playwright
-```sh
+
+2. Install Playwright
+
 npm install --save-dev @playwright/test
-```
 
-### 3. Install Cucumber.js and Related Dependencies
-```sh
+
+ 3. Install Cucumber.js and Related Dependencies
+
 npm install --save-dev @cucumber/cucumber playwright cucumber-html-reporter
-```
 
-### 4. Install Playwright Browsers
-```sh
+
+ 4. Install Playwright Browsers
+
 npx playwright install
-```
 
-## Project Structure
-```
+
+Project Structure
+
 TS_QA_BASE_CODE/
 |--config/
 |   |──cucumber.js
@@ -48,7 +48,18 @@ TS_QA_BASE_CODE/
 │   |  ├── Hooks.js
 │-- package.json
 │-- tsconfig.json
-```
+
+
+Env files content
+
+BASE_URL = https://ts-sit.finsurge.ai
+USER_NAME = SA_1
+PASS_WORD= Sa1@1234
+HEADLESS = false
+BROWSER= chrome
+
+LOGIN_PATH = '/tradelens-gui/#/login'
+DASHBOARD_PATH= 'tradelens-gui/#/alerts/dashboard/alerts'
 
 
 
